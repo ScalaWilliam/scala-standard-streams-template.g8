@@ -18,8 +18,7 @@ And would not terminate if the input stream is infinite.
 <!-- toc -->
 
 - [Usage](#usage)
-  * [`kafka-mirror` on Docker Hub](#kafka-mirror-on-docker-hub)
-- [Technical choices & relevant documentation](#technical-choices--relevant-documentation)
+- [Relevant documentation](#relevant-documentation)
 - [Other notes](#other-notes)
 - [Licence](#licence)
 
