@@ -9,7 +9,7 @@ object $className$ extends App {
     ***/
   object WordCount {
     def wordsInLine(line: String): WordCount = {
-      line.split("\\s+").length
+      line.split("\\\\s+").length
     }
     type WordCount = Int
     def initial: WordCount = 0

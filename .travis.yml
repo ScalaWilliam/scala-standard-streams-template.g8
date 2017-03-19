@@ -12,12 +12,4 @@ services:
   - docker
 
 script:
-  - sbt new file://${TRAVIS_BUILD_DIR} \
-    --name="Streaming Word Count" \
-    --organization=com.scalawilliam \
-    --package=com.scalawilliam.stream.wordcount \
-    --className=StreamingWordCountApp \
-    --docker_repository=scalawilliam \
-    --project_name=streaming-word-count
-  - cd streaming-word-count
-  - sbt test stage
+  - make test

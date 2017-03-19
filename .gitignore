@@ -1,3 +1,4 @@
+streaming-word-count/
 *.iml
 .idea
 target/

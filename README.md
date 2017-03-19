@@ -1,7 +1,19 @@
 ***Batteries included!***
 
-> Minimal template to produce Scala applications that work with standard output.<br>
+> Minimal template to produce Scala applications that work with standard input and output.<br>
 Comes with an automatic configuration for Travis & publishing to Docker Hub.
+
+Basically we make an explicit check whether output stream is closed or not.
+  
+If we didn't have this check, command such as:
+
+```
+$ cat large-file | scala-app | head -n 10
+```
+
+would only terminate once the whole file is read.
+
+And would not terminate if the input stream is infinite.
 
 <!-- toc -->
 
